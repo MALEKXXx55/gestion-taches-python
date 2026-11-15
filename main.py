@@ -27,6 +27,11 @@ while True:
 
     elif choix == "3":
         mot = input("Mot-clé : ").strip()
+
+        if mot == "":
+            print("Veuillez saisir un mot-clé.")
+            continue
+
         trouve = False
 
         for i, titre in enumerate(taches, 1):
