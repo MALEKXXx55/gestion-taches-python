@@ -26,7 +26,7 @@ while True:
                 print(i, "-", titre)
 
     elif choix == "3":
-        mot = input("Mot-clé : ")
+        mot = input("Mot-clé : ").strip()
         trouve = False
 
         for i, titre in enumerate(taches, 1):
